@@ -1,5 +1,4 @@
 # Dota-Realtime-Matchup-Analyzer
-A real time match up analyzer for the video game Dota 2.
 
 When joining a new match this tool will provide useful information about recent games of the other players. This includes their percentage of won games and most played heroes.
 
