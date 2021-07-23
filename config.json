@@ -1,0 +1,6 @@
+{
+  "dota2_folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\dota 2 beta",
+  "api_url": "https://api.opendota.com/api/players/",
+  "number_of_matches_to_analyze": 25,
+  "number_of_heroes_displayed": 3
+}
