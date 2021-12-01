@@ -605,10 +605,15 @@
 "name":"npc_dota_hero_dawnbreaker",
 "id":135,
 "localized_name":"Dawnbreaker"
+},
+{
+"name":"npc_dota_hero_marci",
+"id":136,
+"localized_name":"Marci"
 }
 ]
 ,
 "status":200,
-"count":121
+"count":122
 }
 }
