@@ -21,7 +21,10 @@ except FileNotFoundError:
 
 try:
     with open(os.path.join(own_location, "heroes.json")) as heroes_data_file:
-        HERO_LIST = json.load(heroes_data_file)
+        hero_data = json.load(heroes_data_file)
+        HERO_NAMES = dict()
+        for hero in hero_data["result"]["heroes"]:
+            HERO_NAMES[hero["id"]] = hero["localized_name"]
 
 except FileNotFoundError:
     print("""No "heroes.json" file found. Please make sure it exists.""")
@@ -80,9 +83,8 @@ class Player:
 
 def get_hero_name(hero_id):
     """Returns the name of the hero with the given id."""
-    for hero in HERO_LIST["result"]["heroes"]:
-        if hero["id"] == hero_id:
-            return hero["localized_name"]
+    if hero_id in HERO_NAMES:
+        return HERO_NAMES[hero_id]
     return "UnknownHero"
 
 
